@@ -1,0 +1,13 @@
+{
+  "name": "splatnet2statink",
+  "description": "a tool for uploading Splatoon 2 battle data to stat.ink",
+  "repository": "https://github.com/ticky/splatnet2statink-heroku",
+  "env": {
+    "HEROKU_KEY": {
+      "description": "A Heroku API key that has access to this app."
+    }
+  },
+  "addons": [
+    "scheduler:standard"
+  ]
+}

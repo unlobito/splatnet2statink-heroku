@@ -1,4 +1,5 @@
 # `splatnet2statink` on Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 [splatnet2statink](https://github.com/frozenpandaman/splatnet2statink), but running periodically via free Heroku dynos and free S3 storage
 
@@ -9,7 +10,6 @@
 1. Run these commands:
    ```bash
    heroku create # Create a Heroku application
-   heroku addons:create cloudcube:free # Add Cloudcube (so we can store configuration in S3)
    heroku addons:create scheduler:standard # Add the Heroku Scheduler (so we can sync periodically)
    git push heroku master # Push the codebase up to Heroku
    ```
